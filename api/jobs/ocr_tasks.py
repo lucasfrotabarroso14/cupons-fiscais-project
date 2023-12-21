@@ -34,20 +34,3 @@ def atualizar_status_ocr(cupom_id, status_ocr, resultado_ocr):
 
 
 
-# @celery.task
-# def check_task_status(task_id):
-#     result = AsyncResult(task_id)
-#     if result.ready():
-#         return {
-#             'status': 'completed',
-#             'result': result.result
-#         }
-#     elif result.failed():
-#         return {
-#             'status': 'failed',
-#             'error_message': result.traceback
-#         }
-#     else:
-#         return {
-#             'status': 'pending'
-#         }

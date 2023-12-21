@@ -62,36 +62,13 @@ class CuponsList(Resource):
             'bandeira_do_cartao': bandeira_cartao,
             'imagem': imagem,
             'forma_de_pagamento': forma_de_pagamento,
-            'codigo_pedido_interno': 'CIA178243HJ',
-            'status': 'B',
-            'nsu': '32105952',
-            'autorizacao': '00000000041010',
-            'codigo_filial': '02',
-            'codigo_gerente': '888912',
-            'codigo_vendedor': '02321',
             'data_hora_upload': datetime.today(),
             'data_hora_aceite': datetime.today(),
-            "status_ocr": "Pendente",  # esses dados vao ser pegue do job
+            "status_ocr": "pendente",  # esses dados vao ser pegue do job
             "resultado_ocr": None  # vai ser pegue do job
 
         }
-        # cupom_obj = {
-        #     'bandeira_do_cartao':bandeira_cartao,
-        #     'imagem':imagem,
-        #     'forma_de_pagamento': forma_de_pagamento,
-        #     'codigo_pedido_interno': 'CXA178243HJ',
-        #     'status':'A',
-        #     'nsu':'20105952',
-        #     'autorizacao':'00000000041010',
-        #     'codigo_filial': '02',
-        #     'codigo_gerente':'999055',
-        #     'codigo_vendedor':'023456',
-        #     'data_hora_upload': datetime.today(),
-        #     'data_hora_aceite': datetime.today(),
-        #     "status_ocr": "Pendente", #esses dados vao ser pegue do job
-        #     "resultado_ocr": "valor inicial" #vai ser pegue do job
-        #
-        # }
+
         res, status = post_cupons(cupom_obj)
         if status:
             response_data = {

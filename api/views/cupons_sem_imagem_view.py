@@ -82,16 +82,9 @@ class CuponsSemFotoDetail(Resource):
             return response
 
         cupom_obj = {
-            'bandeira_do_cartao': "teste",
+            'bandeira_do_cartao': bandeira_cartao,
             'imagem': imagem,
-            'forma_de_pagamento': 'teste',
-            'codigo_pedido_interno': 'CXA178243HJ',
-            'status': 'A',
-            'nsu': '20105952',
-            'autorizacao': '00000000041010',
-            'codigo_filial': '02',
-            'codigo_gerente': '999055',
-            'codigo_vendedor': '023456',
+            'forma_de_pagamento': forma_de_pagamento,
             'data_hora_upload': datetime.today(),
             'data_hora_aceite': data_hora_aceite,
             'status_ocr': 'pendente',
