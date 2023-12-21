@@ -16,3 +16,4 @@ Backend desenvolvido  em Flask para processamento e gerenciamento de notas fisca
 - **Docker**: Utilizado para conteinerizar os serviços de PostgreSQL e Redis.
 - **Redis**: Como broker de mensagens para tarefas assíncronas.
 
+# cupons-fiscais-project
